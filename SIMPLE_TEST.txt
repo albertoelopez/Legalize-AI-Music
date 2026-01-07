@@ -1,0 +1,52 @@
+══════════════════════════════════════════════════════════
+   COPY AND PASTE THESE COMMANDS ONE BY ONE
+══════════════════════════════════════════════════════════
+
+STEP 1: Open your terminal (WSL, PowerShell, or Command Prompt)
+
+STEP 2: Copy and paste this command:
+
+cd /mnt/d/AI_Projects/ralph_app/src
+
+STEP 3: Test if it works - copy this:
+
+../venv/bin/python -m workflow.cli --help
+
+YOU SHOULD SEE:
+- A menu showing 5 commands
+- convert, start, status, stop, test-ollama
+
+STEP 4: Test Ollama connection - copy this:
+
+../venv/bin/python -m workflow.cli test-ollama --model llama3.1:8b
+
+YOU SHOULD SEE:
+- "Testing Ollama connection..."
+- "✓ Ollama connection successful!"
+
+STEP 5: Ask the AI a question - copy this:
+
+../venv/bin/python -m workflow.cli start --prompt "What is MIDI?" --model llama3.1:8b
+
+YOU SHOULD SEE:
+- A fancy box with your question
+- A spinner while it thinks
+- "✓ Workflow completed successfully!"
+- An answer from the AI about MIDI
+
+══════════════════════════════════════════════════════════
+
+IF NOTHING HAPPENS:
+
+1. Make sure Ollama is running:
+   ollama serve
+
+2. Check you're in the right directory:
+   pwd
+   (should show: /mnt/d/AI_Projects/ralph_app/src)
+
+3. Check Python works:
+   ../venv/bin/python --version
+   (should show: Python 3.12.3)
+
+══════════════════════════════════════════════════════════
