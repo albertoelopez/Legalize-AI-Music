@@ -1,0 +1,29 @@
+# Audio Processing
+basic-pitch>=0.2.5
+librosa>=0.10.0
+pretty_midi>=0.2.10
+soundfile>=0.12.1
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Agent Framework
+langchain>=0.1.0
+langchain-community>=0.0.10
+ollama>=0.1.0
+
+# Desktop Automation
+pyautogui>=0.9.54
+pygetwindow>=0.0.9
+pillow>=10.0.0
+
+# MCP and API
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.5.0
+httpx>=0.26.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+click>=8.1.0
+rich>=13.7.0

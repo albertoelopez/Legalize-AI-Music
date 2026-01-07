@@ -1,0 +1,44 @@
+# Suno AI to MIDI FL Studio Automation Configuration
+
+# Ollama Settings
+ollama:
+  base_url: "http://localhost:11434"
+  model: "mistral"  # Options: mistral, llama2, codellama, etc.
+  temperature: 0.7
+  timeout: 120
+
+# Audio to MIDI Conversion Settings
+audio_to_midi:
+  onset_threshold: 0.5
+  frame_threshold: 0.3
+  minimum_note_length: 127.70
+  minimum_frequency: null  # Hz, null for auto
+  maximum_frequency: null  # Hz, null for auto
+  target_sample_rate: 22050
+
+# FL Studio Settings
+fl_studio:
+  window_title: "FL Studio"
+  automation_delay: 1000  # milliseconds
+  default_drop_position:
+    x: 400
+    y: 300
+
+# Workflow Settings
+workflow:
+  output_directory: "output"
+  max_concurrent_conversions: 5
+  auto_cleanup: false
+  save_intermediate_files: true
+
+# Agent Settings
+agent:
+  max_iterations: 10
+  verbose: true
+  handle_parsing_errors: true
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "output/workflow.log"
+  console: true

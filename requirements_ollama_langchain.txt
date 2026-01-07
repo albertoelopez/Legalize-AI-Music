@@ -1,0 +1,50 @@
+# Ollama and LangChain Integration Requirements
+# Install with: pip install -r requirements_ollama_langchain.txt
+
+# Core LangChain packages
+langchain==0.2.0
+langchain-core==0.2.0
+langchain-community==0.2.0
+langchain-ollama==0.1.0
+
+# LLM and embeddings support
+ollama==0.2.0
+
+# Vector databases
+faiss-cpu==1.8.0
+# OR for GPU support: faiss-gpu
+
+# Document processing
+python-dotenv==1.0.0
+
+# Async support
+aiohttp==3.9.0
+
+# Retry logic
+tenacity==8.2.0
+
+# Monitoring
+psutil==5.9.0
+
+# Web utilities
+requests==2.31.0
+
+# Optional: For code execution examples
+ipython==8.18.0
+
+# Optional: For LiteLLM proxy (if using local LLM proxies)
+litellm==1.30.0
+
+# Optional: For Hugging Face models
+huggingface-hub==0.17.0
+
+# Development tools (optional)
+pytest==7.4.0
+pytest-asyncio==0.21.0
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.0
+
+# Documentation (optional)
+sphinx==7.2.0
+sphinx-rtd-theme==2.0.0
